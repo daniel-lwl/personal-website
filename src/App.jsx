@@ -1,10 +1,11 @@
+import React from "react";
 import Navbar from "./components/layout/Navbar";
+import "./styles/global.css";
 
 function App() {
     return (
       <div>
         <Navbar />
-        <h1>Hello, this is my portfolio!</h1>
       </div>
     );
   }
