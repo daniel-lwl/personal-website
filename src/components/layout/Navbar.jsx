@@ -29,7 +29,7 @@ function Navbar() {
         <div className="navbar-container">
             {/* Home Button as a Link */}
             <a href="#home" className="nav-home">
-            <img src={homeIcon} alt="Home" />
+                <img src={homeIcon} alt="Home" />
             </a>
 
             {/* Navigation Links */}

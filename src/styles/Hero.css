@@ -1,9 +1,23 @@
 .hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(180deg, #1a002f 0%, #180024 50%, #0b0015 100%);
-    color: white;
-    margin: 0px;
-  }
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #1a002f 0%, #180024 50%, #0b0015 100%);
+  color: white;
+  margin: 0px;
+}
+
+.hero-text{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-heading{
+  margin: 32px 0px 16px 0px
+}
+
+.sub-heading{
+  color: #858484
+}
