@@ -5,8 +5,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px; /* Base size */
-    min-height: 200vh; /* Ensures enough content for scrolling */
-    overflow-y: scroll; /* Forces a scroll even if content fits */
+    min-height: 100vh; /* Ensures enough content for scrolling */
 }
 
 html, body {

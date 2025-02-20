@@ -5,6 +5,10 @@
   justify-content: center;
   background: linear-gradient(180deg, #1a002f 0%, #180024 50%, #0b0015 100%);
   color: white;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px;
   margin: 0px;
 }
 
@@ -12,6 +16,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  max-width: 820px;
 }
 
 .main-heading{
@@ -20,4 +25,52 @@
 
 .sub-heading{
   color: #858484
+}
+
+/*Buttons CSS*/
+.hero-buttons {
+  display: flex;
+  gap: 44px;
+  margin-top: 30px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn {
+  background-color: #333;
+  color: white;
+  border: 2px solid transparent;
+}
+
+.primary-btn:hover {
+  background-color: white;
+  color: #333;
+  border: 2px solid #333;
+}
+
+.secondary-btn {
+  background-color: black;
+  color: white;
+  /* border: 2px solid black; */
+}
+
+.secondary-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.icon {
+  font-size: 20px;
 }

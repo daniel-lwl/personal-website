@@ -28,15 +28,16 @@ function Navbar() {
         <nav className="navbar" style={{ top: hidden ? "-100px" : "20px" }}>
         <div className="navbar-container">
             {/* Home Button as a Link */}
-            <a href="#home" className="nav-home">
+            {/* <a href="#home" className="nav-home">
                 <img src={homeIcon} alt="Home" />
-            </a>
+            </a> */}
 
             {/* Navigation Links */}
             <ul className="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </div>
         </nav>
