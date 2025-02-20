@@ -1,14 +1,21 @@
 import TechCard from "../common/TechCard";
+import figmaLogo from "../../assets/icons/Figma Logo.svg"
+import bootStrapLogo from "../../assets/icons/Bootstrap Logo.svg"
+import gitHubLogo from "../../assets/icons/Git Logo.svg"
+import javaScriptLogo from "../../assets/icons/Javascript Logo.svg"
+import nodeJSLogo from "../../assets/icons/NodeJS Logo.svg"
+import postgreSQLLogo from "../../assets/icons/PostgreSQL Logo.svg"
+import reactLogo from "../../assets/icons/React Logo.svg"
 import "../../styles/TechStack.css";
 
 const techStack = [
-    { name: "Figma", description: "Design Tool", icon: "🎨" },
-    { name: "JavaScript", description: "Programming Language", icon: "📜" },
-    { name: "React", description: "JavaScript Library", icon: "⚛️" },
-    { name: "NodeJS", description: "JavaScript Framework", icon: "🟢" },
-    { name: "BootStrap", description: "CSS Framework", icon: "📦" },
-    { name: "Git", description: "Version Control", icon: "🔧" },
-    { name: "PostgreSQL", description: "Database", icon: "🐘" },
+    { name: "Figma", description: "Design Tool", icon: figmaLogo },
+    { name: "JavaScript", description: "Programming Language", icon: javaScriptLogo },
+    { name: "React", description: "JavaScript Library", icon: reactLogo },
+    { name: "NodeJS", description: "JavaScript Framework", icon: nodeJSLogo },
+    { name: "BootStrap", description: "CSS Framework", icon: bootStrapLogo },
+    { name: "Git", description: "Version Control", icon: gitHubLogo },
+    { name: "PostgreSQL", description: "Database", icon: postgreSQLLogo },
   ];
 
 const TechStack = () => {

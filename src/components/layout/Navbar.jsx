@@ -1,37 +1,36 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../../styles/Navbar.css"; //import the styling for the Navbar
 import homeIcon from "../../assets/icons/Home Icon.svg"
 
-//TODO: Change the border on the home icon and add animations to the hovering of the links
 
 function Navbar() {
     const [hidden, setHidden] = useState(false);
-
+    const lastScrollY = useRef(0); // Using useRef to persist the value across renders
 
     useEffect(() => {
-        let lastScrollY = window.scrollY;
-    
+
         const handleScroll = () => {
-            if (window.scrollY > lastScrollY && window.scrollY > 50) {
-                setHidden(true); // Hide when scrolling down
+            const currentScroll = document.documentElement.scrollTop; // Get current scroll position
+
+            if (currentScroll > lastScrollY.current && currentScroll > 50) {
+                setHidden(true); // Hide navbar when scrolling down
             } else {
-                setHidden(false); // Show when scrolling up
+                setHidden(false); // Show navbar when scrolling up
             }
-            lastScrollY = window.scrollY;
+
+            lastScrollY.current = currentScroll; // Update last known scroll position
         };
-    
+
         window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+        
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []); // Empty dependency array ensures effect runs once after mount
     
     return (
         <nav className="navbar" style={{ top: hidden ? "-100px" : "20px" }}>
         <div className="navbar-container">
-            {/* Home Button as a Link */}
-            {/* <a href="#home" className="nav-home">
-                <img src={homeIcon} alt="Home" />
-            </a> */}
-
             {/* Navigation Links */}
             <ul className="nav-links">
                 <li><a href="#home">Home</a></li>
