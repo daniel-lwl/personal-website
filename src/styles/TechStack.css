@@ -1,0 +1,71 @@
+.tech-stack {
+    text-align: left; /* Align text to the left */
+    padding: 3rem;
+    margin: 0 9.75rem 0 9.75rem; /* 156px converted to rem */
+}
+
+.tech-stack h2 {
+    font-size: 2rem;  /* 32px */
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+}
+
+.tech-stack p {
+    font-size: 1rem;  /* 16px */
+    font-weight: 400;
+    color: #858484;
+    margin-bottom: 2rem;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr)); /* 300px */
+    gap: 1.25rem; /* 20px */
+    justify-items: center;
+    margin-top: 1.25rem;
+}
+
+.tech-card {
+    background: #191919;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    border-radius: 0.625rem; /* 10px */
+    text-align: center;
+    width: 18.75rem; /* 300px */
+    height: 5rem; /* 80px */
+    display: flex;
+    align-items: center;
+    gap: 0.9375rem; /* 15px */
+}
+
+.tech-icon {
+    width: 3.75rem; /* 60px */
+    height: 3.75rem; /* 60px */
+}
+
+.tech-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    min-height: 4.5rem; /* Adjust the minimum height for better alignment */
+    line-height: 1.2; /* Decrease line-height to bring text closer together */
+}
+
+.tech-info h3 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0;
+    text-align: left;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.tech-info p {
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    color: #808080;
+    margin: 0;
+    text-align: left;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
