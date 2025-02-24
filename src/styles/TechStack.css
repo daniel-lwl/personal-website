@@ -1,10 +1,9 @@
 .tech-stack {
     text-align: left; /* Align text to the left */
-    padding: 3rem;
     padding: 5rem 9.75rem 5rem 9.75rem; /* 156px converted to rem */
     position: relative; /* Ensure it covers entire section */
     width: 100%;
-    background: linear-gradient(to top right, rgba(98, 46, 127, 0.2), #000000 60%);
+    background: linear-gradient(to top right, rgba(24,0,36,255), #000000 60%);
 }
 
 .tech-stack h2 {
