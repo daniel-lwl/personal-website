@@ -3,6 +3,7 @@ import Navbar from "./components/layout/Navbar";
 import Hero from "./components/sections/Hero";
 import TechStack from "./components/sections/TechStack";
 import Projects from "./components/sections/Projects";
+import Contacts from "./components/sections/Contacts"
 import "./styles/global.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <TechStack />
         <Projects />
+        <Contacts />
       </div>
     );
   }

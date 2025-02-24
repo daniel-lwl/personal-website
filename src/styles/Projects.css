@@ -4,7 +4,7 @@
     position: relative; /* Ensure it covers entire section */
     width: 100%;
     padding: 5rem 9.75rem 5rem 9.75rem; /* 156px converted to rem */
-    background: linear-gradient(to bottom right, rgba(24,0,36,255), #000000 60%);
+    background: linear-gradient(to bottom right, rgba(21,0,31,255), #0b0015 60%);
 }
   
 /* --- Projects Header --- */
