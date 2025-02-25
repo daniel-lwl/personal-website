@@ -6,6 +6,7 @@ import TechStack from "./components/sections/TechStack";
 import Projects from "./components/sections/Projects";
 import Contacts from "./components/sections/Contacts"
 import About from "./components/sections/About"; // Import the About page
+import Footer from "./components/layout/Footer";
 import "./styles/global.css";
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
           {/* About Route */}
           <Route path="/about" element={<About />} />
         </Routes>
+        <hr />
+        <Footer />
       </Router>
     );
   }

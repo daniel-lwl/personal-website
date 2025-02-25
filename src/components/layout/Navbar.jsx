@@ -8,6 +8,12 @@ function Navbar() {
     
     const [hidden, setHidden] = useState(false); // Track navbar visibility
     const lastScrollY = useRef(0); // Store last scroll position
+    const handleScroll = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -36,8 +42,8 @@ function Navbar() {
             <ul className="nav-links">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
-                <li><Link to="/#projects">Projects</Link></li>
-                <li><Link to="/#contact">Contact Me</Link></li>
+                <li><Link onClick={() => handleScroll("projects")}>Projects</Link></li>
+                <li><Link onClick={() => handleScroll("contact")}>Contact Me</Link></li>
             </ul>
         </div>
         </nav>

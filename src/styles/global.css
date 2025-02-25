@@ -45,3 +45,21 @@ p {
 html {
     scroll-behavior: smooth;
 }
+
+.footer {
+    text-align: left;
+    padding: 1rem 10rem;
+    background-color: rgba(26,0,46,255);
+    color: #808080;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+hr {
+    height: 1px; /* Adjust thickness */
+    border: none;
+    background-color: #0c0016; /* Adjust color */
+    opacity: 0.5; /* Optional: Reduce opacity */
+}
