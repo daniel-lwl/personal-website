@@ -5,30 +5,30 @@ import homeIcon from "../../assets/icons/Home Icon.svg"
 
 
 function Navbar() {
-    const [hidden, setHidden] = useState(false);
-    const lastScrollY = useRef(0); // Using useRef to persist the value across renders
+    
+    const [hidden, setHidden] = useState(false); // Track navbar visibility
+    const lastScrollY = useRef(0); // Store last scroll position
 
     useEffect(() => {
-
         const handleScroll = () => {
-            const currentScroll = document.documentElement.scrollTop; // Get current scroll position
-
-            if (currentScroll > lastScrollY.current && currentScroll > 50) {
-                setHidden(true); // Hide navbar when scrolling down
-            } else {
-                setHidden(false); // Show navbar when scrolling up
-            }
-
-            lastScrollY.current = currentScroll; // Update last known scroll position
+          const currentScroll = document.documentElement.scrollTop; // Correct way to track scroll position
+      
+          if (currentScroll > lastScrollY.current && currentScroll > 50) {           
+            setHidden(true); // Hide navbar when scrolling down
+          } else {
+            setHidden(false); // Show navbar when scrolling up
+          }
+      
+          lastScrollY.current = currentScroll; // Update last known scroll position
         };
-
+      
         window.addEventListener("scroll", handleScroll);
-        
+      
         return () => {
-            window.removeEventListener("scroll", handleScroll);
+          window.removeEventListener("scroll", handleScroll);
         };
-    }, []); // Empty dependency array ensures effect runs once after mount
-    
+      }, []);
+
     return (
         <nav className="navbar" style={{ top: hidden ? "-100px" : "20px" }}>
         <div className="navbar-container">

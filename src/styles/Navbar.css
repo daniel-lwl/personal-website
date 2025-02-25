@@ -1,68 +1,48 @@
 .navbar {
   position: fixed;
+  top: 20px; /* Adjust the position */
   left: 50%;
-  transform: translateX(-50%); /* This centers it horizontally */
-  width:auto;
-  padding: 10px 20px;
-  transition: top 0.3s ease-in-out ; /* Slower transition */
-  z-index: 1000; /* Ensures it's above other elements */
-}
-
-.navbar.hidden{
-  transform: translate(-50%, -100%); /* Move navbar out of view */
-}
-  
-.navbar-container {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  background: #1b1a1a;
-  padding: 16px 32px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-  
-.nav-home{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transition: border 0.3s ease;
-}
-
-.nav-home:hover {
-  border: 2px solid #6F53E8; /* Or whatever color you prefer */
-}
-  
-.nav-home img {
-  width: 20px;
-  height: 20px;
-}
-
-.nav-links {
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.1); /* Slight transparent grey */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* White outline */
+  padding: 12px 24px;
+  border-radius: 12px; /* Rounded edges */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
   display: flex;
   gap: 20px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hide Navbar when scrolling down */
+.navbar.hidden {
+  top: -100px; /* Moves navbar out of view */
+}
+
+/* Navbar Links */
+.nav-links {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline-block;
 }
 
 .nav-links a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
   font-weight: 500;
-  transition: color 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
+/* Hover effect */
 .nav-links a:hover {
-  color: #8f9edc; /* Accent color */
-}
-
-.nav-home{
-  margin: 0;
-
+  background: rgba(255, 255, 255, 0.2); /* Light greyish hover effect */
+  color: #c7a7ff; /* Light purple hover */
 }
