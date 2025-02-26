@@ -74,3 +74,69 @@
 .icon {
   font-size: 20px;
 }
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .hero-text {
+    max-width: 700px;
+  }
+  
+  .main-heading {
+    font-size: 40px;
+  }
+  
+  .hero {
+    padding: 80px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    max-width: 90%;
+  }
+  
+  .main-heading {
+    font-size: 36px;
+  }
+  
+  .sub-heading {
+    font-size: 18px;
+  }
+  
+  .hero-buttons {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 250px;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 15px;
+  }
+  
+  .main-heading {
+    font-size: 30px;
+    margin: 20px 0px 12px 0px;
+  }
+  
+  .sub-heading {
+    font-size: 16px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  .icon {
+    font-size: 16px;
+  }
+}

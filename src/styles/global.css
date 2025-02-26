@@ -63,3 +63,48 @@ hr {
     background-color: #0c0016; /* Adjust color */
     opacity: 0.5; /* Optional: Reduce opacity */
 }
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 40px;
+    }
+    
+    .footer {
+        padding: 1rem 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    .footer {
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    .footer {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+}
