@@ -56,15 +56,11 @@ This site is deployed on Vercel with continuous integration. Any changes pushed 
 
 ## Future Enhancements
 
-- Blog section for sharing insights and updates
+- Add actual projects into the "Projects" section
 - Dark/Light mode toggle
 - Animation improvements
 - Performance optimization
 
-## License
-
-[Choose appropriate license or state if project is private]
-
 ## Contact
 
-For any inquiries about this project, please reach out through the contact form on the website or directly at [your-email@example.com].
+For any inquiries about this project, please reach out through the contact form on the website or directly at [danielleong47@gmail.com].
