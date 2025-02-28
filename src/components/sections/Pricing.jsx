@@ -20,7 +20,7 @@ const packages = [
   {
     badge: "Popular",
     title: "Multi-Page Website",
-    price: "Starting at RM3,500",
+    price: "Starting at RM2,500",
     perfectFor: "Businesses that need a complete web presence with multiple pages to showcase their services.",
     features: [
       "Up to 5 custom pages",

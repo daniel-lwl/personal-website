@@ -3,8 +3,8 @@ import figmaLogo from "../../assets/icons/Figma Logo.svg"
 import bootStrapLogo from "../../assets/icons/Bootstrap Logo.svg"
 import gitHubLogo from "../../assets/icons/Git Logo.svg"
 import javaScriptLogo from "../../assets/icons/Javascript Logo.svg"
-import nodeJSLogo from "../../assets/icons/NodeJS Logo.svg"
-import postgreSQLLogo from "../../assets/icons/PostgreSQL Logo.svg"
+import nodeJSLogo from "../../assets/icons/NodeJS logo.svg"
+import postgreSQLLogo from "../../assets/icons/PostgreSQL logo.svg"
 import reactLogo from "../../assets/icons/React Logo.svg"
 import "../../styles/TechStack.css";
 
