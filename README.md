@@ -1,8 +1,70 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with React and deployed on Vercel. This site showcases my projects, skills, and services with a smooth user experience and intuitive navigation.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Fully optimized for all devices from mobile to desktop
+- **Smooth Navigation**: Dynamic navbar with smooth scrolling to different sections
+- **Project Showcase**: Gallery of my work with detailed information
+- **Pricing Section**: Clear presentation of services and rates
+- **Contact Form**: Easy way for potential clients to reach out
+- **Modern UI/UX**: Clean, professional design with intuitive user interface
+
+## Technologies Used
+
+- React.js
+- React Router for navigation
+- CSS for styling
+- Vercel for deployment
+- Git for version control
+
+## Sections
+
+- **Hero Section**: Introduction and call to action
+- **Projects**: Portfolio of completed work
+- **Pricing**: Service offerings and rates
+- **Contact**: Form for inquiries and communication
+
+## Local Development
+
+To run this project locally:
+
+1. Clone the repository
+
+   ```
+   git clone [your-repository-url]
+   ```
+
+2. Install dependencies
+
+   ```
+   npm install
+   ```
+
+3. Start the development server
+
+   ```
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
+
+## Deployment
+
+This site is deployed on Vercel with continuous integration. Any changes pushed to the main branch will automatically trigger a new deployment.
+
+## Future Enhancements
+
+- Blog section for sharing insights and updates
+- Dark/Light mode toggle
+- Animation improvements
+- Performance optimization
+
+## License
+
+[Choose appropriate license or state if project is private]
+
+## Contact
+
+For any inquiries about this project, please reach out through the contact form on the website or directly at [your-email@example.com].
