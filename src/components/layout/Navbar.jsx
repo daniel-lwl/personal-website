@@ -72,7 +72,12 @@ function Navbar() {
 
                 {/* Navigation Links */}
                 <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
-                    <li><Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link></li>
+                    <li>
+                        <Link onClick={() => {
+                        handleScroll("hero"); // Assuming your Hero section has id="hero"
+                        setMobileMenuOpen(false);
+                        }}>Home</Link>
+                    </li>
                     <li><Link onClick={() => handleScroll("pricing")}>Pricing</Link></li>
                     <li><Link onClick={() => handleScroll("projects")}>Projects</Link></li>
                     <li><Link onClick={() => handleScroll("contact")}>Contact Me</Link></li>

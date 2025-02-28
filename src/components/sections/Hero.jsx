@@ -3,7 +3,7 @@ import colaborateIcon from "../../assets/icons/Colaborate Icons.svg"
 
 function Hero(){
     return(
-        <section id="home" className="hero">
+        <section id="hero" className="hero">
 
             <div className="hero-text">
                 <h2>Based in Malaysia</h2>
