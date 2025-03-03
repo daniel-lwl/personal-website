@@ -134,7 +134,6 @@
 @media (max-width: 768px) {
     .tech-stack {
         padding: 3rem 2rem;
-        text-align: center;
     }
     
     .tech-grid {
@@ -148,10 +147,6 @@
     .tech-icon {
         width: 2.75rem;
         height: 2.75rem;
-    }
-    
-    .tech-stack h2, .tech-stack p {
-        text-align: center;
     }
     
     .tech-info p {
